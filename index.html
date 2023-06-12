@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Esempio.. Form di Contatto.. </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2>Compila il form .. </h2>
+ 
+  <form id="contactForm" action="send_email.php" method="POST" onsubmit="return validateForm()">
+    <label for="name">Nome e Cognome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Messaggio:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="submit" value="Invia">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- https://dariotorrente.cargo.site/ -->
